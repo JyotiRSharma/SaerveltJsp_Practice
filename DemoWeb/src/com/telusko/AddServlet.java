@@ -16,12 +16,14 @@ public class AddServlet extends HttpServlet{
 		
 		int k = i + j;
 		
+		res.sendRedirect("sq?k="+k); //URL Rewriting
+		
 //		System.out.println("The addition is " + k);
 		
-		req.setAttribute("k", k);
-		
-		RequestDispatcher rd = req.getRequestDispatcher("sq");
-		rd.forward(req, res);
+//		req.setAttribute("k", k);
+//		
+//		RequestDispatcher rd = req.getRequestDispatcher("sq");
+//		rd.forward(req, res);
 	}
 
 }
