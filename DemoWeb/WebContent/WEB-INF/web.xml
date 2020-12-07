@@ -24,4 +24,25 @@
 		<servlet-name>sq</servlet-name>
 		<url-pattern>/sq</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>contextTest</servlet-name>
+		<servlet-class>com.telusko.ContextParamServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>contextTest</servlet-name>
+		<url-pattern>/ctx</url-pattern>
+	</servlet-mapping>
+	
+	
+	<context-param>
+		<param-name>name</param-name>
+		<param-value>Jyoti</param-value>
+	</context-param>
+	
+	<context-param>
+		<param-name>phone</param-name>
+		<param-value>Oppo</param-value>
+	</context-param>
 </web-app>
